@@ -1,0 +1,338 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@keyframes navLinkOnHover {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 3rem;
+  }
+}
+nav {
+  height: 10vh;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+nav .inner-nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 10%;
+}
+nav .inner-nav .logo-wrapper {
+  flex: 2;
+}
+nav .inner-nav .logo-wrapper h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.25rem;
+}
+nav .inner-nav ul.nav-links {
+  flex: 5;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  gap: 10px;
+}
+nav .inner-nav ul.nav-links li.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+nav .inner-nav ul.nav-links li.nav-link.active a {
+  color: #396FF0;
+  font-weight: 700;
+}
+nav .inner-nav ul.nav-links li.nav-link.active a::after {
+  content: "";
+  background: #396FF0;
+  width: 3rem;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 8px;
+}
+nav .inner-nav ul.nav-links li.nav-link a {
+  font-family: "Quicksand", sans-serif;
+  color: #555;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.03rem;
+  width: 100%;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+nav .inner-nav ul.nav-links li.nav-link a:hover {
+  color: #396FF0;
+}
+nav .inner-nav ul.nav-links li.nav-link a:hover::after {
+  content: "";
+  background: #396FF0;
+  width: 3rem;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 8px;
+  animation: navLinkOnHover 300ms ease;
+}
+
+section.hero {
+  display: flex;
+  align-items: center;
+  padding: 4.5rem 10%;
+  gap: 3rem;
+}
+section.hero .profile-hero-wrapper {
+  flex: 1;
+}
+section.hero .profile-hero-wrapper img {
+  width: 100%;
+  border-radius: 100%;
+}
+section.hero .text-hero-wrapper {
+  flex: 3;
+}
+section.hero .text-hero-wrapper span.hello {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+}
+section.hero .text-hero-wrapper h2 {
+  font-size: 4.25rem;
+  font-family: "Quicksand", sans-serif;
+}
+section.hero .text-hero-wrapper h2 span {
+  color: #396FF0;
+}
+section.hero .text-hero-wrapper p.short-desc {
+  font-family: "Roboto", sans-serif;
+  color: #444;
+  text-indent: 2rem;
+  margin-top: 0.6rem;
+  line-height: 28px;
+}
+section.hero .text-hero-wrapper .businnes-email {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-top: 0.4rem;
+  font-size: 1.1rem;
+}
+section.hero .text-hero-wrapper .businnes-email span.businnes-text {
+  color: #333;
+}
+section.hero .text-hero-wrapper .businnes-email a {
+  color: #396FF0;
+}
+
+section.about {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+}
+section.about .title-area {
+  display: flex;
+  flex-direction: column;
+}
+section.about .title-area h1 {
+  font-size: 3rem;
+  font-family: "Quicksand", sans-serif;
+}
+section.about .title-area hr {
+  width: 7rem;
+  height: 3.5px;
+  border: none;
+  background: #396FF0;
+  border-radius: 10px;
+  margin-top: 0.28rem;
+}
+section.about .desc-area {
+  margin-top: 1.3rem;
+}
+section.about .desc-area p {
+  color: #444;
+  font-family: "Roboto", sans-serif;
+  text-indent: 2.5rem;
+  line-height: 26px;
+}
+
+section.achievments {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+  margin-top: 3rem;
+}
+section.achievments .title-area {
+  display: flex;
+  flex-direction: column;
+}
+section.achievments .title-area h1 {
+  font-size: 3rem;
+  font-family: "Quicksand", sans-serif;
+}
+section.achievments .title-area hr {
+  width: 7rem;
+  height: 3.5px;
+  border: none;
+  background: #396FF0;
+  border-radius: 10px;
+  margin-top: 0.28rem;
+}
+section.achievments .desc-area {
+  margin-top: 1.3rem;
+}
+section.achievments .desc-area ul.list-achievments {
+  font-family: "Roboto", sans-serif;
+  color: #444;
+}
+section.achievments .desc-area ul.list-achievments li.achievment {
+  margin: 0.3rem 0;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+section.achievments .desc-area ul.list-achievments li.achievment i {
+  color: #e9d311;
+  margin-right: 5px;
+}
+
+section.skills {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+  margin-top: 3rem;
+}
+section.skills .title-area {
+  display: flex;
+  flex-direction: column;
+}
+section.skills .title-area h1 {
+  font-size: 3rem;
+  font-family: "Quicksand", sans-serif;
+}
+section.skills .title-area hr {
+  width: 7rem;
+  height: 3.5px;
+  border: none;
+  background: #396FF0;
+  border-radius: 10px;
+  margin-top: 0.28rem;
+}
+section.skills .desc-area {
+  margin-top: 1.3rem;
+}
+section.skills .desc-area .skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+section.skills .desc-area .skills-container .skill {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  padding: 3rem;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+}
+section.skills .desc-area .skills-container .skill img {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+section.skills .desc-area .skills-container .skill span {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+section.projects {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+  margin-top: 3rem;
+}
+section.projects .title-area {
+  display: flex;
+  flex-direction: column;
+}
+section.projects .title-area h1 {
+  font-size: 3rem;
+  font-family: "Quicksand", sans-serif;
+}
+section.projects .title-area hr {
+  width: 7rem;
+  height: 3.5px;
+  border: none;
+  background: #396FF0;
+  border-radius: 10px;
+  margin-top: 0.28rem;
+}
+section.projects .desc-area {
+  margin-top: 1.3rem;
+}
+section.projects .desc-area .projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+section.projects .desc-area .projects-container .project {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  padding: 3rem;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+}
+section.projects .desc-area .projects-container .project img.thumbnail {
+  width: 100%;
+}
+section.projects .desc-area .projects-container .project h2.title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-top: 1rem;
+}
+section.projects .desc-area .projects-container .project ul.stacks {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+section.projects .desc-area .projects-container .project ul.stacks li {
+  margin: 0 5px;
+}
+section.projects .desc-area .projects-container .project ul.stacks li img {
+  width: 45px;
+  border-radius: 7px;
+}
+section.projects .desc-area .projects-container .project .action {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}
+section.projects .desc-area .projects-container .project .action .button {
+  display: flex;
+  border: 1.25px solid #333;
+  padding: 0.4rem;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #333;
+}
+section.projects .desc-area .projects-container .project .action img {
+  width: 20px;
+}
+
+/*# sourceMappingURL=app.css.map */
