@@ -426,7 +426,7 @@ section.achievments .desc-area ul.list-achievments li.achievment .achievment-det
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: center;
-  gap: 15px;
+  gap: 17.5px;
   list-style: none;
 }
 section.achievments .desc-area ul.list-achievments li.achievment .achievment-detail ul li img {
