@@ -198,7 +198,7 @@ nav .hamburger {
     flex-direction: column;
     width: 25px;
     left: 1rem;
-    top: 1.8rem;
+    top: 4vh;
     cursor: pointer;
   }
 }
