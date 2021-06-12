@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="./public/css/app.css">
     <title>Tomy Wibowo | Personal Website</title>
 </head>
@@ -22,85 +23,123 @@
 
         <!-- Navbar -->
         <nav>
-            <div class="inner-nav">
+            <div class="inner-nav container">
                 <div class="logo-wrapper">
                     <h1>ToMy</h1>
                 </div>
-                <ul class="nav-links">
-                    <li class="nav-link active">
-                        <a href="">Home</a>
+                <ul class="nav-links sidebar-not-active">
+                    <li class="nav-link">
+                        <a href="#app">Home</a>
                     </li>
                     <li class="nav-link">
-                        <a href="">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li class="nav-link">
-                        <a href="">Achievments</a>
+                        <a href="#achievments">Achievments</a>
                     </li>
                     <li class="nav-link">
-                        <a href="">Skills</a>
+                        <a href="#skills">Skills</a>
                     </li>
                     <li class="nav-link">
-                        <a href="">Projects</a>
+                        <a href="#projects">Projects</a>
                     </li>
                     <li class="nav-link">
-                        <a href="">Contacts</a>
+                        <a href="#contacts">Contacts</a>
                     </li>
                 </ul>
+            </div>
+
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </nav>
         <!-- End of Navbar -->
 
 
         <!-- Hero -->
-        <section class="hero">
+        <section class="hero container">
             <div class="profile-hero-wrapper">
                 <img src="./public/images/profile-pict.png" alt="">
             </div>
             <div class="text-hero-wrapper">
-                <span class="hello">Hello</span>
-                <h2>I'm <span>Tomy Wibowo</span></h2>
-                <p class="short-desc">I am 19 years old. An enthusiastic Software Developer from Indonesia who likes community,  programming, Linux, and also open source.</p>
-                <div class="businnes-email">
-                    <span class="businnes-text">For business inquiries, you can send an email to : </span>
-                    <a href="">tomyntapss@gmail.com</a>
+                <div>
+                    <span class="hello" id="about">Hello</span>
+                    <h2>I'm <span>Tomy Wibowo</span></h2>
                 </div>
+                <p class="short-desc">I am 19 years old. An junior enthusiastic Software Developer from Indonesia who likes community,  programming, Linux, and also open source.</p>
             </div>
         </section>
         <!-- End of Hero -->
 
 
         <!-- About -->
-        <section class="about">
+        <span id="achievments"></span>
+        <section class="about container">
             <div class="title-area">
                 <h1>About</h1>
                 <hr>
             </div>
             <div class="desc-area">
                 <p>
-                    My name is Tomy Wibowo, I am 19 years old and born in Purbalingga City, Central Java Province. My hobbies are playing badminton and chess. I started getting to know programming in mid-2019 when I was in grade 11, at that time I just had a laptop and that's when I learned programming and finally I liked it
+                    My name is Tomy Wibowo. I'm a junior programmer graduated from SMK Negeri 1 Rembang majoring in Rekayasa Perangkat Lunak. Have the ability and
+interest in programming. I am able to make Websites, RESTful APIs, Slicing designs to become websites, and like to solve a
+problem. I really like programming, because with programming I can put my ideas into an application, and with programming too, it trains me to be a person who likes challenges, solves problems and also becomes someone who likes new things.
+
+Previously I used to work on projects both individually and in teams. I am disciplined and have good communication,
+so I can work individually or in a team.
                 </p>
+                <p></p>
             </div>
         </section>
         <!-- End of About -->
 
 
         <!-- Achievments -->
-        <section class="achievments">
+        <section class="achievments container">
             <div class="title-area">
                 <h1>Achievments</h1>
                 <hr>
             </div>
             <div class="desc-area">
                 <ul class="list-achievments">
-                    <li class="achievment"><i class="fas fa-trophy"></i> 1st Place in LKS Web Technologiy Kabupaten Purbalingga 2020</li>
-                    <li class="achievment"><i class="fas fa-trophy"></i> 1st place in IITC Web Design Competition</li>
+                    <li class="achievment">
+                        <span>
+                            <i class="fas fa-trophy"></i> 
+                            1st Place in LKS Web Technologiy Kabupaten Purbalingga 2020 <b>( Individual ) - Nov 2020 </b>
+                        </span>
+                        <div class="achievment-detail d-none">
+                            <ul>
+                                <li><img src="./public/images/lks-1.jpg" alt=""></li>
+                                <li><img src="./public/images/lks-2.jpg" alt=""></li>
+                                <li><img src="./public/images/lks-3.jpg" alt=""></li>
+                                <li><img src="./public/images/sertifikat-lks-web-tech-kabupaten.jpg" alt=""></li>
+                            </ul>
+                            <p>Dokumentasi dan Sertifikat Penghargaan</p>
+                        </div>
+                    </li>
+                    <li class="achievment">
+                        <span><i class="fas fa-trophy"></i> 1st place in IITC Web Design Competition  <b>( Team ) - Okt 2020 </b>
+                        <div class="achievment-detail d-none">
+                            <ul>
+                                <li><img src="./public/images/iitc-web-design.jpg" alt=""></li>
+                                <li><img src="./public/images/120923120_3498238613529796_153010501135737550_n.jpg" alt=""></li>
+                                <li><img src="./public/images/120924049_5054786114547596_2470557287738861009_n.jpg" alt=""></li>
+                                <li><img src="./public/images/WD-1_Tomy.jpg" alt=""></li>
+                            </ul>
+                            <p>Dokumentasi dan Sertifikat Penghargaan</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
         <!-- End of Achievments -->
 
         <!-- Skills -->
-        <section class="skills">
+        <span id="skills"></span>
+        <br><br>
+        <section class="skills container">
             <div class="title-area">
                 <h1>Skills</h1>
                 <hr>
@@ -108,32 +147,52 @@
             <div class="desc-area">
                 <div class="skills-container">
                     <div class="skill">
-                        <img src="./public/images/laravel.jpg" alt="">
-                        <span>Laravel</span>
+                        <img src="./public/images/html.png" alt="">
+                        <span>HTML</span>
                     </div>
                     <div class="skill">
-                        <img src="./public/images/2918581.png" alt="">
-                        <span>Bootstrap</span>
-                    </div>
-                    <div class="skill">
-                        <img src="./public/images/php.png" alt="">
-                        <span>PHP</span>
+                        <img src="./public/images/css.png" alt="">
+                        <span>CSS</span>
                     </div>
                     <div class="skill">
                         <img src="./public/images/js.png" alt="">
                         <span>Javascript</span>
                     </div>
                     <div class="skill">
+                        <img src="./public/images/php.png" alt="">
+                        <span>PHP</span>
+                    </div>
+                    <div class="skill">
+                        <img src="./public/images/mysql.png" alt="">
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill">
+                        <img src="./public/images/2918581.png" alt="">
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="skill">
+                        <img src="./public/images/laravel.jpg" alt="">
+                        <span>Laravel</span>
+                    </div>
+                    <div class="skill">
+                        <img src="./public/images/git.png" alt="">
+                        <span>Git</span>
+                    </div>
+                    <div class="skill">
+                        <img src="./public/images/github.png" alt="">
+                        <span>Github</span>
+                    </div>
+                    <div class="skill">
+                        <img src="./public/images/sass.png" alt="">
+                        <span>SASS</span>
+                    </div>
+                    <div class="skill">
+                        <img src="./public/images/node-js.png" alt="">
+                        <span>Node JS</span>
+                    </div>
+                    <div class="skill">
                         <img src="./public/images/vscode.png" alt="">
                         <span>Visual Studio Code</span>
-                    </div>
-                    <div class="skill">
-                        <img src="./public/images/laravel.jpg" alt="">
-                        <span>Laravel</span>
-                    </div>
-                    <div class="skill">
-                        <img src="./public/images/laravel.jpg" alt="">
-                        <span>Laravel</span>
                     </div>
                 </div>
             </div>
@@ -141,7 +200,8 @@
         <!-- End of Skills -->
 
         <!-- Projects -->
-        <section class="projects">
+        <span id="projects"></span>
+        <section class="projects container">
             <div class="title-area">
                 <h1>Projects</h1>
                 <hr>
@@ -155,7 +215,7 @@
                             <li><img src="./public/images/wordpress.png" alt=""></li>
                         </ul>
                         <div class="action">
-                            <a href="https://smkn1rembang-pbg.sch.id/" class="button demo">
+                            <a href="https://smkn1rembang-pbg.sch.id/" target="_blank" class="button demo">
                                 <span>Demo</span>
                             </a>
                         </div>
@@ -168,11 +228,11 @@
                             <li><img src="./public/images/sass.png" alt=""></li>
                         </ul>
                         <div class="action">
-                            <a href="https://github.com/MyFRA/vue-salfood-landing-page" class="button source">
+                            <a href="https://github.com/MyFRA/vue-salfood-landing-page" target="_blank" class="button source">
                                 <img src="./public/images/github.png" alt="">
                                 <span>Source</span>
                             </a>
-                            <a href="https://salfood-myfra.netlify.app/" class="button demo">
+                            <a href="https://salfood-myfra.netlify.app/" target="_blank" class="button demo">
                                 <span>Demo</span>
                             </a>
                         </div>
@@ -184,11 +244,11 @@
                             <li><img src="./public/images/laravel.jpg" alt=""></li>
                         </ul>
                         <div class="action">
-                            <a href="https://github.com/MyFRA/toko-kosmetik-payment-gateway" class="button source">
+                            <a href="https://github.com/MyFRA/toko-kosmetik-payment-gateway" target="_blank" class="button source">
                                 <img src="./public/images/github.png" alt="">
                                 <span>Source</span>
                             </a>
-                            <a href="http://kosmetik.smkn1rembang-pbg.sch.id/" class="button demo">
+                            <a href="http://kosmetik.smkn1rembang-pbg.sch.id/" target="_blank" class="button demo">
                                 <span>Demo</span>
                             </a>
                         </div>
@@ -200,7 +260,7 @@
                             <li><img src="./public/images/laravel.jpg" alt=""></li>
                         </ul>
                         <div class="action">
-                            <a href="http://lsp.smkn1rembang-pbg.sch.id/" class="button demo">
+                            <a href="http://lsp.smkn1rembang-pbg.sch.id/" target="_blank" class="button demo">
                                 <span>Demo</span>
                             </a>
                         </div>
@@ -213,11 +273,11 @@
                             <li><img src="./public/images/css.png" alt=""></li>
                         </ul>
                         <div class="action">
-                            <a href="https://github.com/MyFRA/COFIGHT-IITC-2020" class="button source">
+                            <a href="https://github.com/MyFRA/COFIGHT-IITC-2020" target="_blank" class="button source">
                                 <img src="./public/images/github.png" alt="">
                                 <span>Source</span>
                             </a>
-                            <a href="https://cofight.netlify.app/" class="button demo">
+                            <a href="https://cofight.netlify.app/" target="_blank" class="button demo">
                                 <span>Demo</span>
                             </a>
                         </div>
@@ -236,30 +296,82 @@
                             <li><img src="./public/images/laravel.jpg" alt=""></li>
                         </ul>
                     </div>
+                    <div class="project">
+                        <img class="thumbnail" src="./public/images/kelulusan.png" alt="">
+                        <h2 class="title">Kelulusan SMK N 1 Rembang 2020/2021</h2>
+                        <ul class="stacks">
+                            <li><img src="./public/images/laravel.jpg" alt=""></li>
+                        </ul>
+                        <div class="action">
+                            <a href="http://kelulusan.smkn1rembang-pbg.sch.id/login" target="_blank" class="button demo">
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="thumbnail" src="./public/images/penjualan.png" alt="">
+                        <h2 class="title">Pendataan Penjualan</h2>
+                        <ul class="stacks">
+                            <li><img src="./public/images/laravel.jpg" alt=""></li>
+                        </ul>
+                        <div class="action">
+                            <a href="https://github.com/MyFRA/penjualan-laravel" target="_blank" class="button source">
+                                <img src="./public/images/github.png" alt="">
+                                <span>Source</span>
+                            </a>
+                            <a href="http://mypenjualan.herokuapp.com" target="_blank" class="button demo">
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="thumbnail" src="./public/images/pembayaran-spp.png" alt="">
+                        <h2 class="title">Pembayaran SPP</h2>
+                        <ul class="stacks">
+                            <li><img src="./public/images/laravel.jpg" alt=""></li>
+                        </ul>
+                        <div class="action">
+                            <a href="https://github.com/MyFRA/aplikasi-pembayaran-spp" target="_blank" class="button source">
+                                <img src="./public/images/github.png" alt="">
+                                <span>Source</span>
+                            </a>
+                            <a href="http://pembayaran-spp.smkn1rembang-pbg.sch.id/" target="_blank" class="button demo">
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- End of projects -->
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
+
+        <!-- Contact -->
+        <section class="contact" id="contacts">
+            <div class="title-area">
+                <h1>Contacts</h1>
+                <hr>
+            </div>
+            <div class="contacts">
+                <a href="">
+                    <i class="zmdi zmdi-github"></i>
+                </a>
+                <a href="">
+                    <i class="zmdi zmdi-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="zmdi zmdi-linkedin"></i>
+                </a>
+                <a href="">
+                    <i class="zmdi zmdi-email"></i>
+                </a>
+            </div>
+        </section>
+        <!-- End of Contact -->
+    </div>
+    <footer>
+        <span>Created with <i class="zmdi zmdi-favorite"></i> By Tomy Wibowo</span>
+    </footer>
     <script src="./public/js/script.js"></script>
 </body>
 </html>
