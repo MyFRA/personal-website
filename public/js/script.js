@@ -23,7 +23,7 @@ listAchievments.addEventListener('click', (e) => {
             } 
         });
         (achievmentDetail != null) ? achievmentDetail.classList.toggle('d-none') : '';
-    } else if(e.target.tagName) {
+    } else if(e.target.tagName == 'SPAN') {
         const achievmentDetail = Array.from(e.target.parentElement.children).find(e => e.classList.contains('achievment-detail'));
         const listAchievmentsDetail = listAchievments.querySelectorAll('li.achievment .achievment-detail');
         listAchievmentsDetail.forEach((e) => {

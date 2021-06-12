@@ -104,7 +104,7 @@ nav .inner-nav ul.nav-links {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  gap: 10px;
+  gap: 15px;
 }
 nav .inner-nav ul.nav-links.sidebar-active {
   animation: sidebarActive 300ms ease forwards;
@@ -232,7 +232,7 @@ section.hero .profile-hero-wrapper img {
 }
 @media screen and (max-width: 991px) {
   section.hero .profile-hero-wrapper img {
-    flex-direction: column;
+    width: 200px;
   }
 }
 section.hero .text-hero-wrapper {
@@ -394,6 +394,8 @@ section.achievments .desc-area ul.list-achievments li.achievment {
   cursor: pointer;
   transition: all 150ms ease;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
 section.achievments .desc-area ul.list-achievments li.achievment:hover {
   background: #EFEFEF;
